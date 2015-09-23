@@ -1,3 +1,239 @@
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+	/* ==========================================================================
+	   Author's custom styles
+	   ========================================================================== */
+
+body {
+	font: 300 16px/22px "Shadows Into Light", cursive;
+	background-color: #264653;
+	margin: 0px auto;
+	padding: 0px;
+	}
+
+.container {
+max-width: 1024px;
+margin: 0px auto;
+	}
+
+.content {
+	padding: 10px 0;
+	width: 1000px;
+	float: right;
+}
+
+main {
+		float: left;
+		width: 1000px;
+		padding: 10px;
+		background-color: green;
+	}
+
+aside {
+	float: right;
+	width: 500px;
+	padding-bottom: 10px;
+	background-color: purple;
+}
+
+a:link { 
+	color: #E9C46A;
+	text-decoration: none;
+	}
+
+a:visited {
+	color: #E9C46A;
+	text-decoration: none;
+	}
+
+a:hover {
+	color: #2A9D8F;
+	text-decoration: underline;
+	}
+
+nav.main {
+	max-width: 1024px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 2px 3px #333333;
+    background-color: #2A9D8F;
+    border-radius: 8px;
+	}
+
+nav.main a {
+	text-decoration: none;
+	font-variant: small-caps;
+    color: #F4A261;
+    padding: 8px 8px 8px 8px;
+}
+
+ul.navigation-links {
+	height: auto;
+	list-style-type: none;
+    padding: 8px 0px;
+    margin: 0px;
+	}
+
+li.navigation {
+	display: inline;
+	padding: 20px; 
+}
+
+/*.page-wrap {
+	min-height: 100%;
+	max-width: 1024px;
+	border: 3px solid #E9c46a;
+	padding: 10px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	}
+
+.page-wrap: after {
+	content: '';
+	display: inline-block;
+	}*/
+
+header {
+	font-size: 30px;
+	color: #E9c46a;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-align: justify;
+	letter-spacing: 1px;
+	}
+
+header:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	}
+
+h2 {
+	font-size: 25px;
+	color: #F4A261;
+	font-variant: small-caps;
+	font-weight: normal;
+	position: relative;
+	}
+
+.blog-entry {
+	float:left;
+}
+
+.top { 
+	float: left;
+	border: none;
+	}
+
+ .p {
+	float: right;
+	font-size: 25px;
+	color: #2A9D8F;
+	border: none;
+	background-color: orange;
+	font-weight: bold;
+	width: 350px;
+	margin: 100px 10px 100px;
+	padding: 10px;
+}
+
+
+figcaption.amy {
+	font-size: 17px;
+	color: #2A9D8F;
+	border: none;
+	text-align: center;
+	width: 320px;
+	}
+
+p {
+	float: left;
+	display: inline-block;
+	font-size: 20px;
+	color: #e76f51;
+	font-weight: bold;
+	margin: 10px 10px 10px 10px;
+	border: dotted;
+	padding: 10px;
+	width: 350px;
+	}
+
+#figure_1{
+	float:left;
+	margin-left: 10px;
+	border: none;
+	display: inline-block;
+	}
+
+#figure_2 {
+	float: left;
+	margin-left: 10px;
+	border: none;
+	display: inline-block;
+	}
+
+#figure_3 {
+	float: left;
+margin-left: 10px;
+	border: none;
+	display: inline-block;
+}
+
+figcaption {
+	font-size: 17px;
+	color: #2A9D8F;
+	border: none;
+	text-align: center;
+	width: 320px;
+	}
+
+address {
+	display: inline-block;
+}	
+
+p.address {
+	font-size: 17px;
+	color: #2A9D8F;
+	border: none;
+	text-align: center;
+	max-width: 320px;
+	}
+
+.footer {
+padding: 10px 0;
+background-color: red;
+position: relative;
+clear:both;
+}
+
+/*p.footer {
+font-size: 17px;
+	color: #2A9D8F;
+	border: none;
+	text-align: center;
+	width: 320px;
+}
+
+footer.site-footer, .page-wrap after {
+	min-height: 100%;
+	max-width: 1024px;
+	border: 3px solid #E9c46a;
+	padding: 10px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	}
+
+.page-wrap: after {
+	content: '';
+	display: inline-block;
+	}
+
+footer.site-footer {
+	max-width: 1024px;
+	padding: 10px;
+	min-height: 100%;
+	margin: 0 auto;
+	background-color: 264653;
+	text-align: center;
+	text-decoration: 
+	}*/
