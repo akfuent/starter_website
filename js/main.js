@@ -49,7 +49,6 @@ console.log('***************************************************')
 var morestuff= ' My constitution is ' + constitution + ' and I have ' + intelligence + ' for intelligence and ' + '\n' + charisma + ' for charisma! ';
 console.log(morestuff);
 
-=====Week 3====
 for (var i = 1; i <= 100; i++) {
     if (i % 5 === 0 && i % 3 === 0) { 
         console.log('fizzbuzz') 
