@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   body{
+   	font-size: 14px;
+   	font-family: ; /* Place your Google font attribute here if you like */
+   	background-color:#ededed;
+   	
+   }
+   .container {
+      max-width:1024px;
+      margin:0em auto;
+      background-color: #white;
+      border: 2px solid blue; /* This is to highlight the outer container*/
+      padding:5px; /* to make this blue outline visible outside of other containing elements: main, section, and aside;*/
+   }
+
+
+   main {
+      padding:1em 0em;
+      background-color:yellow;
+      float:left;
+      width:100%;
+      border: 2px solid green; /* This is to highlight the main container*/
+   }
+
+   h2 {
+   	font-size: 2em;
+   }
+
+   li strong {color:#2D3142;}
+
+/*** Navigation Styles ***/
+
+   nav {
+      background-color:purple;
+      padding:1em;
+      margin-bottom:1em;
+      border: 2px solid red; /* This is to highlight the main container*/
+   }
+
+   nav img:first-child{
+      width:40px;
+      height:40px;
+      border-radius:20px;
+      overflow: hidden;
+      float:left;
+      margin-right:1em;
+   }
+
+   nav>ul>li {
+      display: inline-block;
+      list-style-type: none;
+      margin-right:1em;
+   }
+
+   nav>ul>li>a:link{
+      color:#ffffff;
+      padding:.5em;
+      border:1px solid orange;
+      border-radius: 4px;
+   }
+
+   nav>ul>li>a:visited{
+      color:#ffffff;
+      border:1px solid orange;
+      border-radius: 4px;
+   }
+
+   nav>ul>li>a:active,
+   nav>ul>li>a:focus,
+   nav>ul>li>a:hover{
+      color:#2D3142;
+      background-color:orange;
+   }
+
+section{
+   width: 600px;
+   float:left;
+   margin:0em 1em;
+   padding:1em;
+   background-color:pink;
+   }
+
+article {
+   padding:1em;
+   margin-bottom:1em;
+}
+
+article.article1 {
+   background-color:orange;
+}
+
+article.article2 {
+   background-color:green;
+}
+
+article.articleX{
+   background-color:tan;
+}
+
+
+aside {
+   background-color:lightblue;
+   margin:0em 1em;
+   padding:1em;
+   float:right;
+   width:300px;
+}
+
+aside h3 {
+   font-weight:400;
+}
+
+footer {
+   background-color: blue;
+   padding: 1em;
+   color: #ffffff;
+}
+
+.clearfix:before,
+.clearfix:after {
+ content: "";
+ display: table;
+}
+
+
+
+
+
+
+
+
+
+

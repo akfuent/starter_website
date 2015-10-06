@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+header, footer, nav, article, main {
+display:block;
+}
+
+a:link { 
+color: #eb6841;
+text-decoration: none;
+}
+
+a:visited {
+color: #eb6841;
+text-decoration: none;
+}
+
+a:hover {
+color: #cc2a36;
+text-decoration: underline;
+}
+
+nav.main {
+}
+
+ul.navigation-links {
+}
+
+body {
+font: 300 16px/22px "Shadows Into Light", cursive;
+}
+
+header {
+text-align: justify;
+letter-spacing: 1px;
+}
+
+header h1,
+header nav {
+display: inline-block;
+}
+
+header:after {
+content: '';
+display: inline-block;
+width: 100%;
+}
+
+.page-wrap {
+min-height: 100%;
+width: 800px;
+margin: 0 auto;
+margin-bottom: -50px;
+}
+
+.page-wrap: after {
+content: '';
+display: block;
+}
+
+figure.amy { 
+}
+
+aside.images {
+float: right;
+display: inline-block;
+}
+
+figcaption {
+font-style: bold;
+}
+
+.site-footer, .page-wrap after {
+height: 50px;
+}
+
+.site-footer {
+background-color: #644c37;
+}

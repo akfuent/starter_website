@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Author's custom scripts
+   ========================================================================== */
+
+
+ /* var name = "Student";
+ var age = 21;
+ var profession = "Graphic Designer";
+
+ var nombre = prompt('What is your new name?'),
+ 	 edad = 21,
+ 	 profesion = "disenador grafico";
+
+console.log('Hi my name is ' + name + ' and I am ' + age + ' and by trade I am a ' + profession); */
+
+var charname = "Aragon",
+level = "Fighter_1",
+background = "Noble",
+player_name= "Amy",
+faction = "Forest",
+race = "Elf",
+alignment = "Right",
+**********
+var expoints = "500",
+dci number = "1000",
+**********
+
+
+
+document.createElement('element name');
+
