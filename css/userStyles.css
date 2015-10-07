@@ -3,7 +3,8 @@
 	   ========================================================================== */
 
 body {
-	font: 300 16px/22px "Shadows Into Light", cursive;
+	font: 300 16px/22px; 
+	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #264653;
 	margin: 0px auto;
 	padding: 0px;
@@ -15,6 +16,7 @@ margin: 0px auto;
 	}
 
 header {
+	position: relative;
 	font-size: 30px;
 	color: #E9c46a;
 	font-variant: small-caps;
@@ -60,7 +62,10 @@ a:visited {
 	display: inline;
 	}
 
-a:hover
+a:hover {
+	color: #2A9D8F;
+	text-decoration: none;
+}
 a:active
 a:focus {
 	color: #2A9D8F;
@@ -81,13 +86,17 @@ nav {
     text-shadow: 3px 2px 3px #333333;
     background-color: #2A9D8F;
     border-radius: 8px;
+    z-index: 5;
 	}
 
 nav a {
 	text-decoration: none;
 	font-variant: small-caps;
+	margin-top: 0px;
+	display: inline-block;
+	height: auto;
     color: #F4A261;
-    padding: 8px 8px 8px 8px;
+    padding: 20px;
 }
 
 nav>ul>li {
@@ -95,7 +104,7 @@ nav>ul>li {
 	height: auto;
 	list-style-type: none;
     padding: 8px 0px;
-    margin: 0px;
+    margin: 0px auto;
 	}
 
 nav>ul>li>a:link{
@@ -116,6 +125,7 @@ nav>ul>li>a:link{
  nav>ul>li>a:hover{
       color:#264653;
       background-color:#E9C46A;
+      margin-top: 2px;
   }
 
 /***End Navigation***/
@@ -133,7 +143,6 @@ aside {
 	height: 1000px;
 	float: right;
 	margin: 0em 1em;
-	padding-bottom: 10px;
 	background-color: #E76F51;
 	border: #3A6B7F dotted;
 }
@@ -152,18 +161,7 @@ article {
 	width: 750px;
 	position: relative;
 	padding: 10px;
-}
-
-article.article1 {
-   background-color:red;
-}
-
-article.article2 {
-   background-color:green;
-}
-
-article.article3{
-   background-color:purple;
+	background-color: #264653;
 }
 
 article.article4{
@@ -172,9 +170,9 @@ article.article4{
 
 .child {
 	position: absolute;
-	height: 110px;
-	left: 200px;
-	width:200px;
+	height: 50px;
+	left: 650px;
+	width:630px;
 }
 
 time {
@@ -209,7 +207,7 @@ figure {
 	display: inline-block;
 	margin: 0 auto;
 	padding: 1em;
-	border: dotted;
+	border: none;
 }
 
 img {
