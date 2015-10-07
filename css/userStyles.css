@@ -17,6 +17,7 @@ margin: 0px auto;
 
 header {
 	position: relative;
+	margin-top: 70px;
 	font-size: 30px;
 	color: #E9c46a;
 	font-variant: small-caps;
@@ -79,7 +80,7 @@ nav {
 	position: fixed;
 	left: 0px;
    	width: 100%;
-    height: 35px;
+    height: 60px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -90,11 +91,10 @@ nav {
 	}
 
 nav a {
+	position: relative;
 	text-decoration: none;
 	font-variant: small-caps;
-	margin-top: 0px;
-	display: inline-block;
-	height: auto;
+	margin-top: -100px;
     color: #F4A261;
     padding: 20px;
 }
@@ -143,6 +143,7 @@ aside {
 	height: 1000px;
 	float: right;
 	margin: 0em 1em;
+	margin-top: 15px;
 	background-color: #E76F51;
 	border: #3A6B7F dotted;
 }
@@ -166,12 +167,13 @@ article {
 
 article.article4{
 	position: relative;
+	text-align: center;
 }
 
 .child {
 	position: absolute;
 	height: 50px;
-	left: 650px;
+	left: 630px;
 	width:630px;
 }
 
@@ -241,6 +243,8 @@ footer.site-footer {
 
 address {
 	display: inline-block;
+	margin-top: 75px;
+	margin-bottom: 75px;
 	text-align:center;
 	font-size: 17px;
 	color: #2A9D8F;
