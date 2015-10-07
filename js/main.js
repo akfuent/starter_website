@@ -2,8 +2,6 @@
    Author's custom scripts
 <<<<<<< HEAD
    ========================================================================== */
-=======
-   ========================================================================== */
 
  /* var name = "Student";
  var age = 21;
@@ -14,6 +12,8 @@
  	 profesion = "disenador grafico";
 
 console.log('Hi my name is ' + name + ' and I am ' + age + ' and by trade I am a ' + profession); */
+
+// ====Week 1 & 2 ====
 
 var charname = "Aragon",
 level = "Fighter_1",
@@ -52,6 +52,7 @@ console.log('***************************************************')
 var morestuff= ' My constitution is ' + constitution + ' and I have ' + intelligence + ' for intelligence and ' + '\n' + charisma + ' for charisma! ';
 console.log(morestuff);
 
+// =====Week 3====
 for (var i = 1; i <= 100; i++) {
     if (i % 5 === 0 && i % 3 === 0) { 
         console.log('fizzbuzz') 
@@ -69,11 +70,11 @@ for (var i = 1; i <= 100; i++) {
 
 for (var i = 99; i >= 1; i--) {
 
-     console.log(i + ' bottles of beer on the wall!')
- };
+        console.log(i + ' bottles of beer on the wall!')
+    };
 
 for (var i = 0; i <= 50; i++) {
- console.log(i * i);
+    console.log(i * i);
 };
 
 var languages = ['druidic', 'dwarven', 'elven', 'gnome', 'orc'];
@@ -85,6 +86,7 @@ console.log(languages.slice(4,5));
 
 console.log('***************************************************');
 
+// ====Week 4====
 function My_character(character_name, level, faction, race, alignment, player_name) {
     this.character_name = character_name;
     this.level = level; 
@@ -156,4 +158,3 @@ traits.defense_tactics = "name_calling";
 
 console.log(traits);
 console.log('***************************************************');
->>>>>>> master
