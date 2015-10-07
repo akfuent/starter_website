@@ -157,3 +157,62 @@ traits.defense_tactics = "name_calling";
 
 console.log(traits);
 console.log('***************************************************');
+
+// ===Week 5===
+function d20(a,b) {
+    console.log(a);
+    console.log(b);
+   Math.floor(Math.random()*20);
+   var result = a * b;
+   console.log(result);
+}
+
+d20(2,4,8);
+
+function manyD20(numberofDice) {
+    Math.floor(Math.random()* numberofDice);
+}
+
+manyD20(5);
+console.log(15,20,8,12,12);
+
+manyD20(2);
+console.log(4,18);
+
+function rollDice(sidedDice, numberofDice) {
+    Math.floor(Math.random()* sidedDice);
+}
+
+rollDice(6,4);
+console.log(6,4,1,2);
+
+rollDice(10,2);
+console.log(8,7);
+
+function rollDiceWithChecking(sidedDice, numberofDice) {
+    Math.floor(Math.random()* sidedDice)
+}
+
+rollDiceWithChecking(6,2);
+console.log(5,4);
+
+rollDiceWithChecking(7,4);
+console.log('There are no 7-sided dice, certainly not 4 of them!');
+
+rollDiceWithChecking(9,5);
+console.log('There are no 9-sided dice, certainly not 5 of them!');
+
+function rollDiceCriticalStrike(sidedDice, numberOfDice) {
+  Math.floor(Math.random()* sidedDice)
+  console.log(20);
+  console.log(1);
+}
+
+rollDiceCriticalStrike(20, 3);
+console.log('critical strike!',15,18);
+
+rollDiceCriticalStrike(20, 1);
+console.log('critical fail!');
+
+rollDiceCriticalStrike(20, 2);
+console.log('critical strike!', 'critical strike!');
