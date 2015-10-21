@@ -148,60 +148,154 @@
 // console.log(traits);
 // console.log('***************************************************');
 
-function d20(a,b) {
-    console.log(a);
-    console.log(b);
-   Math.floor(Math.random()*20);
-   var result = a * b;
-   console.log(result);
+// var pojo3 = {
+//   "this value can be..." : "a string!",
+//   "or a number" : 50002934,
+//   "or an array" : [42, 15, 18],
+//   "or another object" : { age : 27, "name" : 'Amy'},
+//   "or a function" : function() { return 'wow that is really awesome!'; },
+//   'anotherFunction' : function() { return 'hells yes!'; }
+// };
+
+// console.log(pojo3['or a function']()); 
+// console.log(pojo3.anotherFunction());
+
+// // var coder = {
+//   name : 'Amy',
+//   employer : 'Consulate-General',
+//   age: 27,
+//   sayHi : function() { return 'Hi I am ' + this.name + ' and I work at ' + this.employer + ' and I am ' + this.age + ' years old.';}
+  
+// };
+
+// var output = coder.sayHi();
+// console.log(output);
+
+// var person = {
+//   'add_name_to_this_object' : function(some_name) {
+//     this.name = some_name; 
+//     return this; 
+//   },
+  
+//   'add_age_to_this_object' : function(age) {
+//     this.age = age;
+//     return this;
+//   }
+    
+// };
+
+// person.add_name_to_this_object('Amy').add_age_to_this_object(27);
+// console.log(person);
+
+
+var amy = { };
+amy.stats = { };
+
+amy.stats.strength = fourBySixRoll(2,4,6,1);
+amy.stats.wisdom = fourBySixRoll(3,5,4,2);
+amy.stats.dexterity = fourBySixRoll(6,1,1,4);
+amy.stats.constitution = fourBySixRoll(3,3,5,5);
+amy.stats.intelligence = fourBySixRoll(1,6,4,2);
+amy.stats.charisma = fourBySixRoll(2,3,1,6);
+
+var juan = { };
+juan.stats = { };
+
+juan.stats.strength = fourD20Roll(20,15,16,2);
+juan.stats.wisdom = fourD20Roll(1,10,12,18);
+juan.stats.dexterity = fourD20Roll(3,7,17,11);
+juan.stats.constitution = fourD20Roll(9,14,13,19);
+juan.stats.intelligence = fourD20Roll(20,5,9,19);
+juan.stats.charisma = fourD20Roll(8,18,15,17);
+
+var gabe = { };
+gabe.stats = { };
+
+gabe.stats.strength = twoByTenRoll(10,5);
+gabe.stats.wisdom = twoByTenRoll(9,3);
+gabe.stats.dexterity = twoByTenRoll(6,2);
+gabe.stats.constitution = twoByTenRoll(8,4);
+gabe.stats.intelligence = twoByTenRoll(10,7);
+gabe.stats.charisma = twoByTenRoll(7,8);
+
+function fourBySixRoll() {
+    var roll1 = sixSidedRoll(),
+        roll2 = sixSidedRoll(),
+        roll3 = sixSidedRoll(),
+        roll4 = sixSidedRoll();
+
+    var lowestRoll;
+
+    lowestRoll = roll1;
+    if (lowestRoll >= roll2) {
+        lowestRoll = roll2;
+    } 
+    if (lowestRoll >= roll3) {
+        lowestroll = roll3;
+    }
+    if (lowestRoll >= roll4) {
+        lowestRoll = roll4;
+    }
+
+    return roll1 + roll2 + roll3 + roll4 - lowestRoll;
+    
 }
 
-d20(2,4,8);
-
-function manyD20(numberofDice) {
-    Math.floor(Math.random()* numberofDice);
+function sixSidedRoll() {
+   return Math.floor(Math.random()*6);
 }
 
-manyD20(5);
-console.log(15,20,8,12,12);
+function fourD20Roll() {
+  var roll1 = twentySidedRoll(),
+      roll2 = twentySidedRoll(),
+      roll3 = twentySidedRoll(),
+      roll4 = twentySidedRoll();
 
-manyD20(2);
-console.log(4,18);
+  var lowestRoll;
 
-function rollDice(sidedDice, numberofDice) {
-    Math.floor(Math.random()* sidedDice);
+    lowestRoll = roll1;
+    if (lowestRoll >= roll2) {
+        lowestRoll = roll2;
+    } 
+    if (lowestRoll >= roll3) {
+        lowestroll = roll3;
+    }
+    if (lowestRoll >= roll4) {
+        lowestRoll = roll4;
+    }
+
+    return roll1 + roll2 + roll3 + roll4 - lowestRoll;
+} 
+
+function twentySidedRoll() {
+   return Math.floor(Math.random()*20);
+}
+function twoByTenRoll() {
+  var roll1 = tenSidedRoll(),
+      roll2 = tenSidedRoll(),
+      roll3 = tenSidedRoll(),
+      roll4 = tenSidedRoll();
+
+  var lowestRoll;
+
+    lowestRoll = roll1;
+    if (lowestRoll >= roll2) {
+        lowestRoll = roll2;
+    } 
+    if (lowestRoll >= roll3) {
+        lowestroll = roll3;
+    }
+    if (lowestRoll >= roll4) {
+        lowestRoll = roll4;
+    }
+
+    return roll1 + roll2 + roll3 + roll4 - lowestRoll;
+} 
+
+function tenSidedRoll () {
+  return Math.floor(Math.random()*10)
 }
 
-rollDice(6,4);
-console.log(6,4,1,2);
-
-rollDice(10,2);
-console.log(8,7);
-
-function rollDiceWithChecking(sidedDice, numberofDice) {
-    Math.floor(Math.random()* sidedDice)
-}
-
-rollDiceWithChecking(6,2);
-console.log(5,4);
-
-rollDiceWithChecking(7,4);
-console.log('There are no 7-sided dice, certainly not 4 of them!');
-
-rollDiceWithChecking(9,5);
-console.log('There are no 9-sided dice, certainly not 5 of them!');
-
-function rollDiceCriticalStrike(sidedDice, numberOfDice) {
-  Math.floor(Math.random()* sidedDice)
-  console.log(20);
-  console.log(1);
-}
-
-rollDiceCriticalStrike(20, 3);
-console.log('critical strike!',15,18);
-
-rollDiceCriticalStrike(20, 1);
-console.log('critical fail!');
-
-rollDiceCriticalStrike(20, 2);
-console.log('critical strike!', 'critical strike!');
+console.log(amy);
+console.log(juan);
+console.log(gabe);

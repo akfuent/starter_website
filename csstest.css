@@ -1,0 +1,131 @@
+body {
+  background-color: purple
+}
+
+.box {
+  height:100px;
+  width: 100px;
+  background-color: red;
+  margin: 30px;
+}
+
+@keyframes moveAroundAndJunk {
+  0% { top: 0; left: 0; background-color: red; }
+  25% { top: 0; left: 100px; background-color: green; }
+  50% { top: 100px; left: 100px; background-color: pink; }
+  75% { top: 100px; left: 0; }
+  100% { top: 0; left: 0; }
+}
+
+.animated-box { 
+  position: relative; 
+  top: 0; left: 0; 
+  animation: moveAroundAndJunk 4s ease-in-out;
+  animation-iteration-count: infinite;
+  z-index: -1
+}
+
+.endless-wiggle {
+  animation: wiggle 2s; 
+  position: relative;
+  left: 0; 
+  background-color: blue;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  25% { left: 5px; }
+  50% { left: 0; }
+  75% { left: -5px; }
+  100% { left: 0; }
+}
+
+.shrinking-text {
+   animation: actuallyShrinks 3s; 
+  animation-direction: reverse; 
+  animation-iteration-count: infinite;
+}
+
+@keyframes actuallyShrinks {
+  from { font-size: 8px; }
+  to { font-size: 24px; }
+}
+
+/*.exercise-trial {
+  width: 250px;
+  overflow: hidden;
+  position: relative;
+}
+.exercise-trial img {
+  max-width: 100%; 
+}
+.hider { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 1; 
+  animation: slide-down 10s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide-down {
+  from { top: 0; }
+  to { top: 100%; }
+}*/
+
+.simple-transform {
+  margin: 50px;
+  transform: scale(1.5);
+}
+
+.rotate {
+  margin: 25px;
+  transform: rotate(45deg);
+}
+
+.translate-X {
+  transform: translateX(55px);
+}
+
+.skewed-text {
+  transform: skew(10deg, 5deg);
+  margin-left:15px;
+  margin-top: 20px;
+}
+
+.top-left-start {
+  transform-origin: top left; 
+  margin-left:50px;
+}
+
+.skewed-box {
+  transform: rotate(10deg);
+  transform-origin: bottom right;
+}
+
+.perspective-alone {
+  transform: perspective(100px);
+}
+
+.perspective-rotate {
+   transform: perspective(100px) rotateX(40deg); 
+}
+
+.full-rotate:hover {
+  animation: full-rotate 5s;
+}
+
+@keyframes full-rotate {
+  from { transform: perspective(100px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  to { transform: perspective(100px) rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+}
+input[type="submit"],
+input[type="text"],
+input[type="Password"] {
+  display: block;
+  font-size: 30px;
+  margin: 15px;
+
+}

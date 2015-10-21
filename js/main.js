@@ -216,3 +216,115 @@ console.log('critical fail!');
 
 rollDiceCriticalStrike(20, 2);
 console.log('critical strike!', 'critical strike!');
+
+var amy = { };
+amy.stats = { };
+
+amy.stats.strength = fourBySixRoll(2,4,6,1);
+amy.stats.wisdom = fourBySixRoll(3,5,4,2);
+amy.stats.dexterity = fourBySixRoll(6,1,1,4);
+amy.stats.constitution = fourBySixRoll(3,3,5,5);
+amy.stats.intelligence = fourBySixRoll(1,6,4,2);
+amy.stats.charisma = fourBySixRoll(2,3,1,6);
+
+var juan = { };
+juan.stats = { };
+
+juan.stats.strength = fourD20Roll(20,15,16,2);
+juan.stats.wisdom = fourD20Roll(1,10,12,18);
+juan.stats.dexterity = fourD20Roll(3,7,17,11);
+juan.stats.constitution = fourD20Roll(9,14,13,19);
+juan.stats.intelligence = fourD20Roll(20,5,9,19);
+juan.stats.charisma = fourD20Roll(8,18,15,17);
+
+var gabe = { };
+gabe.stats = { };
+
+gabe.stats.strength = twoByTenRoll(10,5);
+gabe.stats.wisdom = twoByTenRoll(9,3);
+gabe.stats.dexterity = twoByTenRoll(6,2);
+gabe.stats.constitution = twoByTenRoll(8,4);
+gabe.stats.intelligence = twoByTenRoll(10,7);
+gabe.stats.charisma = twoByTenRoll(7,8);
+
+function fourBySixRoll() {
+    var roll1 = sixSidedRoll(),
+        roll2 = sixSidedRoll(),
+        roll3 = sixSidedRoll(),
+        roll4 = sixSidedRoll();
+
+    var lowestRoll;
+
+    lowestRoll = roll1;
+    if (lowestRoll >= roll2) {
+        lowestRoll = roll2;
+    } 
+    if (lowestRoll >= roll3) {
+        lowestroll = roll3;
+    }
+    if (lowestRoll >= roll4) {
+        lowestRoll = roll4;
+    }
+
+    return roll1 + roll2 + roll3 + roll4 - lowestRoll;
+    
+}
+
+function sixSidedRoll() {
+   return Math.floor(Math.random()*6);
+}
+
+function fourD20Roll() {
+  var roll1 = twentySidedRoll(),
+      roll2 = twentySidedRoll(),
+      roll3 = twentySidedRoll(),
+      roll4 = twentySidedRoll();
+
+  var lowestRoll;
+
+    lowestRoll = roll1;
+    if (lowestRoll >= roll2) {
+        lowestRoll = roll2;
+    } 
+    if (lowestRoll >= roll3) {
+        lowestroll = roll3;
+    }
+    if (lowestRoll >= roll4) {
+        lowestRoll = roll4;
+    }
+
+    return roll1 + roll2 + roll3 + roll4 - lowestRoll;
+} 
+
+function twentySidedRoll() {
+   return Math.floor(Math.random()*20);
+}
+function twoByTenRoll() {
+  var roll1 = tenSidedRoll(),
+      roll2 = tenSidedRoll(),
+      roll3 = tenSidedRoll(),
+      roll4 = tenSidedRoll();
+
+  var lowestRoll;
+
+    lowestRoll = roll1;
+    if (lowestRoll >= roll2) {
+        lowestRoll = roll2;
+    } 
+    if (lowestRoll >= roll3) {
+        lowestroll = roll3;
+    }
+    if (lowestRoll >= roll4) {
+        lowestRoll = roll4;
+    }
+
+    return roll1 + roll2 + roll3 + roll4 - lowestRoll;
+} 
+
+function tenSidedRoll () {
+  return Math.floor(Math.random()*10)
+}
+
+console.log(amy);
+console.log(juan);
+console.log(gabe);
