@@ -42,7 +42,7 @@ header {
 ul {
 	list-style-type: none;
 	margin-top: 5px;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 main {
@@ -88,7 +88,7 @@ a:focus {
 /***Navigation Styles ***/
 
 nav {
-  	padding: 10px;
+  	padding: 1px;
       float:none;
       width: 90%;
       z-index: 4;
@@ -236,12 +236,15 @@ figcaption {
  display: table;
 }*/
 	
-footer.site-footer {
-	position: fixed;
+.site-footer {
+	position: relative;
 	left:0px;
- 	bottom: 0px;
+ 	top: 0px;
   	width: 100%;
-	background-color: 264653;
+	color: #e76f51;
+	font-size: 20px;
+	font-variant: small-caps;
+    font-weight: bold;
 	text-align: center;
 	box-sizing: border-box;
 	}
@@ -320,7 +323,7 @@ nav a {
     color: #F4A261;
 }
 nav ul {
-	max-height: 35px;
+	max-height: 45px;
 }
 
 nav>ul>li {
