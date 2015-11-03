@@ -1,0 +1,59 @@
+
+.halloween-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  	flex-wrap: wrap;
+	padding: 10px;
+	margin: 10px;
+	margin-left: 77px;
+	font-variant: small-caps;
+	width: 100px;
+	height: 100%;
+	background-color: orange;
+	border: 1px solid;
+	box-sizing: border-box;
+}
+
+.transition1 {
+ moz-transition: background-color, 2s; 
+}
+.transition1:hover {
+  background-color: green;
+}
+.transition1:active {
+  background-color: red;
+}
+
+ .transition2 {
+	moz-transition: background-color, 2s;
+}
+
+.transition2:hover {
+	background-color: white;
+}
+
+.halloween-box-transition3 {
+	
+}
+.halloween-box-transition4 {
+	
+}
+.halloween-box-transition5 {
+	
+}
+.halloween-box-transition6 {
+	
+}
+.halloween-box-transition7 {
+	
+}
+.halloween-box-transition8 {
+	
+}
+.halloween-box-transition9 {
+	
+}
+.halloween-box-transition10 {
+	
+}

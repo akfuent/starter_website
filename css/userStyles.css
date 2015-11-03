@@ -1,6 +1,7 @@
 	/* ==========================================================================
 	   Author's custom styles
 	   ========================================================================== */
+
 .ThirdCol {
   width: 100%; 
   margin-left:0;
@@ -14,16 +15,18 @@
   margin-left: 0px;
 }
 
+
 body {
 	font: 300 16px/22px; 
 	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #264653;
 	}
 
-.container {
+/*.container {
 max-width: 1024px;
 margin: 0px auto;
-	}
+padding: 10px;
+	}*/
 
 header {
 	float: none;
@@ -80,7 +83,7 @@ a:hover {
 a:active
 a:focus {
 	color: #2A9D8F;
-	text-decoration: underline;
+	text-decoration: none;
 	}
 
 
@@ -173,6 +176,7 @@ article {
 	width:630px;
 }*/
 
+
 time {
 	font-size: 20px;
 	padding: 5px;
@@ -181,6 +185,65 @@ time {
 	margin-left: 10px;
 }
 
+.halloween-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  	flex-wrap: wrap;
+	padding: 10px;
+	margin: 10px;
+	margin-left: 77px;
+	font-variant: small-caps;
+	width: 42%;
+	height: 100%;
+	background-color: orange;
+	color: black;
+	border: 1px solid;
+	box-sizing: border-box;
+}
+
+.transition1 {
+ transition: background-color, 2s; 
+}
+.transition1:hover {
+  background-color: green;
+}
+.transition1:active {
+  background-color: red;
+}
+
+.transition2 {
+  transition: background-color, 2s;
+}
+
+.transition2:hover {
+	background-color: white;
+}
+
+.transition3 {
+	
+}
+.transition4 {
+	
+}
+.transition5 {
+	
+}
+.halloween-box-transition6 {
+	
+}
+.halloween-box-transition7 {
+	
+}
+.halloween-box-transition8 {
+	
+}
+.halloween-box-transition9 {
+	
+}
+.halloween-box-transition10 {
+	
+}
 
 figcaption.amy {
 	display: block;
@@ -220,7 +283,6 @@ img {
 }
 
 
-
 figcaption {
 	font-size: 17px;
 	color: #2A9D8F;
@@ -228,6 +290,7 @@ figcaption {
 	text-align: center;
 	width: 100%;
 	}
+
 
 /*.clearfix:before,
 .clearfix:after {
