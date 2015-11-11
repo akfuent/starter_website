@@ -15,18 +15,15 @@
   margin-left: 0px;
 }
 
+/*.container {
+	margin: 
+}*/
 
 body {
 	font: 300 16px/22px; 
 	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #264653;
 	}
-
-/*.container {
-max-width: 1024px;
-margin: 0px auto;
-padding: 10px;
-	}*/
 
 header {
 	float: none;
@@ -49,8 +46,9 @@ ul {
 }
 
 main {
-		float: left;
-		width: 100%;
+	  display: flex;
+	  flex-flow: row wrap;
+  		width: 100%; margin: 0 auto;
 		padding: 1em 0em;
 		background-color: #3A6B7F;
 		border-radius: 8px;
@@ -185,68 +183,10 @@ time {
 	margin-left: 10px;
 }
 
-.halloween-box {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  	flex-wrap: wrap;
-	padding: 10px;
-	margin: 10px;
-	margin-left: 77px;
-	font-variant: small-caps;
-	width: 42%;
-	height: 100%;
-	background-color: orange;
-	color: black;
-	border: 1px solid;
-	box-sizing: border-box;
-}
-
-.transition1 {
- transition: background-color, 2s; 
-}
-.transition1:hover {
-  background-color: green;
-}
-.transition1:active {
-  background-color: red;
-}
-
-.transition2 {
-  transition: background-color, 2s;
-}
-
-.transition2:hover {
-	background-color: white;
-}
-
-.transition3 {
-	
-}
-.transition4 {
-	
-}
-.transition5 {
-	
-}
-.halloween-box-transition6 {
-	
-}
-.halloween-box-transition7 {
-	
-}
-.halloween-box-transition8 {
-	
-}
-.halloween-box-transition9 {
-	
-}
-.halloween-box-transition10 {
-	
-}
 
 figcaption.amy {
-	display: block;
+	display: flex;
+	flex-flow: column wrap;
 	font-size: 17px;
 	color: #2A9D8F;
 	border: none;
@@ -265,8 +205,8 @@ p {
 
 figure {
 	max-width: 100%;
-	display: block;
-	margin: 0 auto;
+	display: flex;
+	flex-flow: column wrap;
 	padding: 20px 15px 20px 5px;
 	border: none;
 	box-sizing: border-box;
@@ -300,6 +240,8 @@ figcaption {
 	
 .site-footer {
 	position: relative;
+	height: 75px;
+	z-index: -1;
 	left:0px;
  	top: 0px;
   	width: 100%;
@@ -330,7 +272,7 @@ address {
       max-width: 992px;
       /*max-width:100%;*/
       margin:0px auto;
-      position:relative;
+      /*position:relative;*/
       background-color: #264653;
       top: 0px;
       left: 0px;
@@ -425,7 +367,7 @@ nav>ul>li>a:link{
       max-width:1024px;
       /*max-width:100%;*/
       margin:0px auto;
-      position:relative;
+     /* position:relative;*/
       background-color: #264653;
       top:0px;
       left:0px;
