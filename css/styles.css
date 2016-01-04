@@ -1,0 +1,185 @@
+.header,
+.title,
+.subtitle,
+.footer-text {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.header {
+	padding-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 12px;
+  line-height: 16px;
+  color: #2F3336;
+}
+.footer-text a {
+  color: #777A74;
+}
+
+.container {
+  width: 600px;
+  max-width: 600px;
+}
+
+.container-padding {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.content {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #F1D79A;
+  border: 1px #322B21 solid;
+  border-radius: 10px;
+  color: #2F3336;
+}
+
+h1 {
+	font-size: 22px;
+  	font-weight: normal;
+	color: #EF7452;
+  	padding: 12px;
+	border: 1px #322B21 solid;
+	background-color: #2F3336;
+	
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #C13A40;
+	text-align: center;
+	padding: 10px;
+	border: 1px #322B21 solid;
+	background-color: #EFE8CB;
+	
+}
+
+img {
+	max-width:100%;
+	margin: 10px; 
+	float: left;
+}
+
+.buttons {
+	text-align: center;
+	max-width: 100%;
+}
+
+.tbuttons {
+	text-align: center;
+	max-width: 100%;
+}
+
+.social {
+	text-align:center;
+	display: inline-block;
+	position:relative;
+	margin-left: 40px;
+}
+
+.top {
+	background-color: #EFE8CB;
+
+}
+
+code {
+  background-color: #398793;
+  padding: 0 4px;
+  font-family: Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+a:link {
+    color: #777A74;
+	text-decoration: none;
+}
+
+a:visited {
+    color: #C13A40;
+	text-decoration: none;
+}
+
+a:hover {
+    color: #EF7452;
+	text-decoration: none;
+}
+
+a:active {
+    color: #777A74;
+	text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.hr {
+  height: 1px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #2F3336;
+  border: 1px #EF7452 solid;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.figure {
+	float:left;
+	vertical-align: top;
+    display: inline-block;
+	position: relative;
+	margin: 20px;
+}
+
+.topics {
+	max-width: 100%;
+}
+
+ ul, ol { 
+overflow: hidden;
+width: 100%;
+padding-left: 10px;
+margin-left: 0px;
+ } 
+
+ ol li, ul li { 
+list-style-position: outside;
+ padding-left: 0; 
+ } 
+
+.subtitle {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #777A74;
+  display: inline-block;
+}
+
+.body-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: #2F3336;
+  border: 1px #2F3336 solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.img-wrapper td {
+  padding-bottom: 18px;
+}
+
+.subtitle {
+  padding-bottom: 6px;
+}
